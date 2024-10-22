@@ -23,6 +23,7 @@
       "@aiokit/bootstrap": ["libs/bootstrap/src/index.ts"],
       "@aiokit/common-types": ["libs/common-types/src/index.ts"],
       "@aiokit/config": ["libs/config/src/index.ts"],
+      "@aiokit/crypto": ["libs/crypto/src/index.ts"],
       "@aiokit/exceptions": ["libs/exceptions/src/index.ts"],
       "@aiokit/i18n": ["libs/i18n/src/index.ts"],
       "@aiokit/logger": ["libs/logger/src/index.ts"],
