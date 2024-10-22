@@ -54,9 +54,11 @@
     "tslib": "^2.3.0",
     "typescript": "~5.5.2",
     "typescript-eslint": "^8.0.0",
+    "verdaccio": "^5.0.4",
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
+    "@aiokit/bootstrap": "workspace:*",
     "@nestjs/common": "^10.0.2",
     "@nestjs/core": "^10.0.2",
     "@nestjs/platform-express": "^10.0.2",
