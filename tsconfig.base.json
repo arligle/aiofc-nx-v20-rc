@@ -8,15 +8,17 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "skipLibCheck": true,
-    "types": ["node", "jest"],
+    "types": ["node"],
     "lib": ["ES2022"],
     "declaration": true,
     "resolveJsonModule": true,
     "baseUrl": ".",
     "rootDir": ".",
     "allowJs": true,
+    "esModuleInterop": true,
     "paths": {
-      "@aiokit/bootstrap": ["libs/bootstrap/src/index.ts"]
+      "@aiokit/bootstrap": ["libs/bootstrap/src/index.ts"],
+      "@aiokit/i18n": ["libs/i18n/src/index.ts"]
     }
   }
 }
