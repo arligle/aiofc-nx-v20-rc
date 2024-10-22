@@ -15,7 +15,13 @@
     "fs-extra": "^11.2.0",
     "class-validator": "^0.14.1",
     "js-yaml": "^4.1.0",
-    "mergician": "^2.0.2"
+    "mergician": "^2.0.2",
+    "@nestjs/graphql": "^12.2.0",
+    "string-format": "^2.0.0",
+    "hbs": "^4.2.0",
+    "accept-language-parser": "^1.5.0",
+    "cookie": "^1.0.1",
+    "@grpc/grpc-js": "^1.12.2"
   },
   "type": "commonjs",
   "main": "./src/index.js",

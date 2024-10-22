@@ -1,5 +1,5 @@
 export default {
-  displayName: 'validation',
+  displayName: 'logger',
   preset: '../../jest.preset.js',
   testEnvironment: 'node',
   transform: {
@@ -7,5 +7,5 @@ export default {
   },
   setupFilesAfterEnv: ['../../jest.setup.js'],
   moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../coverage/libs/validation',
+  coverageDirectory: '../../coverage/libs/logger',
 };
