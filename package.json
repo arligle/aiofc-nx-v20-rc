@@ -91,6 +91,7 @@
     "@aiokit/typeorm": "workspace:*",
     "@aiokit/persistence-api": "workspace:*",
     "@aiokit/string-utils": "workspace:*",
+    "@aiokit/async-storage": "workspace:*",
     "@grpc/grpc-js": "^1.12.2",
     "@nestjs/common": "^10.0.2",
     "@nestjs/core": "^10.0.2",

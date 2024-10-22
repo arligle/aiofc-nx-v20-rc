@@ -19,6 +19,7 @@
     "sourceMap": true,
     "skipDefaultLibCheck": true,
     "paths": {
+      "@aiokit/async-storage": ["libs/async-storage/src/index.ts"],
       "@aiokit/bootstrap": ["libs/bootstrap/src/index.ts"],
       "@aiokit/common-types": ["libs/common-types/src/index.ts"],
       "@aiokit/config": ["libs/config/src/index.ts"],
