@@ -34,6 +34,8 @@ module.exports = [
         "@typescript-eslint/no-require-imports": "off",
         "@typescript-eslint/no-empty-function": "off",
         "@typescript-eslint/no-unsafe-function-type": "off",
+        "@typescript-eslint/no-empty-interface": "off",
+        "@typescript-eslint/no-empty-object-type": "off",
     },
   },
 ];
