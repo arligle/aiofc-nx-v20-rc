@@ -2,13 +2,13 @@ import { fileLoader, TypedConfigModule } from 'nest-typed-config';
 import { ROOT_CONFIG_ALIAS_TOKEN } from './constants';
 import { SetupConfigOptions } from './vo/setup-config-options';
 import { getExistingFilePaths } from './utils/get-existing-file-paths';
-import type { Type } from '@nestjs/common';
+import type { DynamicModule, Type } from '@nestjs/common';
 
 export function setupYamlBaseConfigModule(
   baseDir: string,
   rootSchemaClass: Type<unknown>,
   options?: SetupConfigOptions,
-) {
+) : DynamicModule{
   const existingFilePaths = getExistingFilePaths(
     baseDir,
     options?.folderName,

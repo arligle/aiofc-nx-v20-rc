@@ -82,7 +82,7 @@ export function validateAndReturnError<T, E>(
   constraint?: E,
   overrideDefaultMessage?: Path<I18nTranslations>,
   args?: unknown,
-) {
+) :I18nValidationError | undefined {
   const isValid = validatorDefinition.validator(value, constraint as E);
 
   return isValid
