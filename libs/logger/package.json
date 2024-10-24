@@ -2,13 +2,12 @@
   "name": "@aiokit/logger",
   "version": "0.0.1",
   "dependencies": {
-    "tslib": "^2.3.0",
-    "@nestjs/common": "^10.0.2",
-    "@aiokit/config": "workspace:*",
     "@aiokit/validation": "workspace:*",
     "class-validator": "^0.14.1",
     "nestjs-cls": "^4.4.1",
-    "nestjs-pino": "^4.1.0"
+    "nestjs-pino": "^4.1.0",
+    "tslib": "^2.3.0",
+    "@nestjs/common": "^10.0.2"
   },
   "type": "commonjs",
   "main": "./src/index.js",

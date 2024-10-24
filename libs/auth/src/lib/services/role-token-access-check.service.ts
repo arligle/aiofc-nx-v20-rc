@@ -1,7 +1,11 @@
-import { RoleType } from '../../__tests__/app/controllers/vo/role-type';
+// import { RoleType } from '../../__tests__/app/controllers/vo/role-type';
 import { RolesBaseJwtPayload } from '../vo/payload';
 import { AbstractRoleAccessCheckService } from './role-access-check.service';
-
+enum RoleType {
+  ADMIN = 'ADMIN',
+  REGULAR = 'REGULAR',
+  NOT_USED = 'NOT_USED',
+}
 export class RoleTokenAccessCheckService extends AbstractRoleAccessCheckService<
   RolesBaseJwtPayload<RoleType>
 > {

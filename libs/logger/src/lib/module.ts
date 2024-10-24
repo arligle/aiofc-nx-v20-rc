@@ -3,6 +3,7 @@ import { LoggerModule } from 'nestjs-pino';
 import { IncomingMessage, ServerResponse } from 'node:http';
 
 import { LoggerConfig } from './config/logger';
+import { DynamicModule } from '@nestjs/common';
 
 export function setupLoggerModule<ClsType extends ClsStore>(
   customProps: (
@@ -10,7 +11,7 @@ export function setupLoggerModule<ClsType extends ClsStore>(
     res: ServerResponse<IncomingMessage>,
     clsService?: ClsService<ClsType>,
   ) => Record<string, string> = () => ({}),
-) {
+):DynamicModule {
   return LoggerModule.forRootAsync({
     useFactory: async (
       loggerConfig: LoggerConfig,
