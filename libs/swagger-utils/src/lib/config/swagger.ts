@@ -1,13 +1,12 @@
 import {
-  IsString,
-  IsBoolean,
   IsEmail,
+  IsOptional,
+  IsString,
   IsUrl,
   Allow,
-  IsOptional,
+  IsBoolean,
 } from 'class-validator';
 import { BooleanType } from '@aiokit/validation';
-import { Server } from 'node:http';
 
 export class SwaggerConfig {
   @IsString()
@@ -38,4 +37,12 @@ export class SwaggerConfig {
   @Allow()
   @IsOptional()
   servers?: Server[];
+}
+
+export class Server {
+  @IsString()
+  url!: string;
+
+  @IsString()
+  description!: string;
 }
