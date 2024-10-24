@@ -32,7 +32,7 @@
       "options": {
         "targetName": "test"
       },
-      "exclude": ["apps/boilerplate-e2e/**/*"]
+      "exclude": ["apps/boilerplate-e2e/**/*", "apps/adminer-e2e/**/*"]
     },
     {
       "plugin": "@nx/webpack/plugin",

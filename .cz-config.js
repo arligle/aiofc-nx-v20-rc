@@ -13,6 +13,7 @@ module.exports = {
     { value: 'test', name: 'test:     增加测试' },
     { value: 'chore', name: 'chore:    构建过程或辅助工具的变动' },
     { value: 'revert', name: 'revert:   回退' },
+    { value: 'remove', name: 'remove:  删除模块或者项目' },
     { value: 'build', name: 'build:    打包' },
     { value: 'ci', name: 'ci:        持续集成' },
     { value: 'wip', name: 'wip:       工作进行中' },
