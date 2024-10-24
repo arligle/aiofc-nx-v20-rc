@@ -1,12 +1,13 @@
 {
-  "name": "@aiokit/swagger-utils",
+  "name": "@aiokit/health-check",
   "version": "0.0.1",
   "dependencies": {
+    "tslib": "^2.3.0",
+    "class-validator": "^0.14.1",
     "@aiokit/validation": "workspace:*",
     "@nestjs/common": "^10.0.2",
-    "@nestjs/swagger": "^7.4.2",
-    "class-validator": "^0.14.1",
-    "tslib": "^2.3.0"
+    "@aiokit/auth": "workspace:*",
+    "@nestjs/swagger": "^7.4.2"
   },
   "type": "commonjs",
   "main": "./src/index.js",
