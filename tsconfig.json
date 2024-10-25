@@ -2,5 +2,9 @@
   "extends": "./tsconfig.base.json",
   "compileOnSave": false,
   "files": [],
-  "references": [{ "path": "./libs/auth" }, { "path": "./libs/config" }]
+  "references": [
+    { "path": "./libs/auth" },
+    { "path": "./libs/config" },
+    { "path": "./packages/nestjs" }
+  ]
 }

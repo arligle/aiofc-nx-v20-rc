@@ -1,6 +1,13 @@
 const nx = require('@nx/eslint-plugin');
 
 module.exports = [
+  // {
+  //   files: ['**/*.json'],
+  //   // Override or add rules here
+  //   rules: {},
+  //   languageOptions: { parser: require('jsonc-eslint-parser') },
+  // },
+
   ...nx.configs['flat/base'],
   ...nx.configs['flat/typescript'],
   ...nx.configs['flat/javascript'],
@@ -30,12 +37,12 @@ module.exports = [
     // Override or add rules here
     rules: {
       // new
-        "@typescript-eslint/no-explicit-any": "off",
-        "@typescript-eslint/no-require-imports": "off",
-        "@typescript-eslint/no-empty-function": "off",
-        "@typescript-eslint/no-unsafe-function-type": "off",
-        "@typescript-eslint/no-empty-interface": "off",
-        "@typescript-eslint/no-empty-object-type": "off",
+      '@typescript-eslint/no-explicit-any': 'off',
+      '@typescript-eslint/no-require-imports': 'off',
+      '@typescript-eslint/no-empty-function': 'off',
+      '@typescript-eslint/no-unsafe-function-type': 'off',
+      '@typescript-eslint/no-empty-interface': 'off',
+      '@typescript-eslint/no-empty-object-type': 'off',
     },
   },
 ];
