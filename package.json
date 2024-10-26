@@ -102,6 +102,7 @@
     "@aiokit/test-utils": "workspace:*",
     "@aiokit/typeorm": "workspace:*",
     "@aiokit/validation": "workspace:*",
+    "@aiokit/health-check": "workspace:*",
     "@fastify/helmet": "^11.0.0",
     "@fastify/static": "7.0.4",
     "@grpc/grpc-js": "^1.12.2",
