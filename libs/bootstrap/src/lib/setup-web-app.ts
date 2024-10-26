@@ -29,7 +29,7 @@ import { DEFAULT_VALIDATION_OPTIONS } from '@aiokit/validation';
 import { AppConfig } from './config/app.config';
 import { setupSwagger, SwaggerConfig } from '@aiokit/swagger-utils';
 import {
-  DbConfig,
+  // DbConfig,
   PostgresDbQueryFailedErrorFilter,
   TYPEORM_FACTORIES_TOKEN,
   TYPEORM_SEEDERS_TOKEN,
@@ -222,7 +222,7 @@ export async function bootstrapBaseWebApp(
   setupGlobalInterceptors(app);
 
   const appConfig = app.get(AppConfig);
-  const dbConfig = callOrUndefinedIfException(() => app.get(DbConfig));
+  // const dbConfig = callOrUndefinedIfException(() => app.get(DbConfig));
   const swaggerConfig = callOrUndefinedIfException(() =>
     app.get(SwaggerConfig),
   );
@@ -252,9 +252,9 @@ export async function bootstrapBaseWebApp(
     );
   }
 
-  if (dbConfig instanceof DbConfig) {
-    await exports.runDatabaseSeeders(app, logger, dbConfig.runSeeds);
-  }
+  // if (dbConfig instanceof DbConfig) {
+  //   await exports.runDatabaseSeeders(app, logger, dbConfig.runSeeds);
+  // }
 
   await app.listen(appConfig.port, '0.0.0.0');
   const url = await app.getUrl();
