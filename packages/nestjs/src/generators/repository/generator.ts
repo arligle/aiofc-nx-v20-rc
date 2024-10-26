@@ -22,7 +22,7 @@ export async function repositoryGenerator(
     pascalCase,
   });
 
-  const repositoriesFolder = joinPathFragments(appRoot, 'src/app/repositories');
+  const repositoriesFolder = joinPathFragments(appRoot, 'src/repositories');
   const repositoryFileName = `${options.repositoryName}.repository`;
 
   const exportPathForIndex = joinPathFragments(

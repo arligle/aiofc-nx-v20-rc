@@ -32,7 +32,7 @@ export async function resourceGenerator(
 
   const entitiesFolder = joinPathFragments(
     appRoot,
-    'src/app/database/entities',
+    'src/database/entities',
   );
 
   const entityFileName = `${options.entityName}.entity`;

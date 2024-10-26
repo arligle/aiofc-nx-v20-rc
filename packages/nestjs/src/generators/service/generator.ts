@@ -26,7 +26,7 @@ export async function serviceGenerator(
     pascalCase,
   });
 
-  const repositoriesFolder = joinPathFragments(appRoot, 'src/app/services');
+  const repositoriesFolder = joinPathFragments(appRoot, 'src/services');
   const serviceFileName = `${options.serviceName}.service`;
 
   const exportPathForIndex = joinPathFragments(

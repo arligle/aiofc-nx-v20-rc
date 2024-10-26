@@ -3,7 +3,7 @@
     "resource": {
       "factory": "./src/generators/resource/generator",
       "schema": "./src/generators/resource/schema.json",
-      "description": "resource generator"
+      "description": "resource generator 生成一个完整的模块"
     },
     "repository": {
       "factory": "./src/generators/repository/generator",

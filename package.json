@@ -3,6 +3,11 @@
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
+  "packageManager": "pnpm@9.3.0",
+  "volta": {
+    "node": "20.16.0",
+    "pnpm": "9.3.0"
+  },
   "scripts": {
     "prebuild": "rimraf dist",
     "test:all": "nx affected:test --all --codeCoverage --skip-nx-cache",

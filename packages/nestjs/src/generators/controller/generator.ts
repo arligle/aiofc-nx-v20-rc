@@ -18,7 +18,7 @@ import {
 import { EOL } from 'node:os';
 import { runLint } from '../common/run-lint';
 
-const permissionsFilePath = 'src/app/assets/migrations/permissions.json';
+const permissionsFilePath = 'src/assets/migrations/permissions.json';
 const defaultRoles = ['SUPER_ADMIN', 'ADMIN'];
 const permissions = ['create', 'read', 'update', 'delete'];
 
@@ -81,7 +81,7 @@ export async function controllerGenerator(
     constantCase,
   });
 
-  const controllersFolder = joinPathFragments(appRoot, 'src/app/controllers');
+  const controllersFolder = joinPathFragments(appRoot, 'src/controllers');
 
   const controllerFileName = `${options.controllerName}.controller`;
   const exportPathForIndex = joinPathFragments(
