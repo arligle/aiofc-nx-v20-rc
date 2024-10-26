@@ -94,7 +94,7 @@
       "default": true
     },
     "title": {
-      "description": "The title of the application.",
+      "description": "例如：平台的主控程序。",
       "type": "string",
       "$default": {
         "$source": "argv",
@@ -102,7 +102,7 @@
       }
     },
     "description": {
-      "description": "The description of the application.",
+      "description": "例如：本框架提供了用于租户和身份验证的通用API，默认情况下为多租户。",
       "type": "string",
       "$default": {
         "$source": "argv",
@@ -122,9 +122,7 @@
     "dbType": {
       "description": "Database type.",
       "type": "string",
-      "enum": [
-        "postgres"
-      ]
+      "default": "postgres"
     },
     "dbName": {
       "description": "Database name.",
@@ -171,7 +169,7 @@
       "type": "array",
       "alias": "l",
       "default": [
-        "en"
+        "en","zh"
       ],
       "x-prompt": {
         "type": "list",

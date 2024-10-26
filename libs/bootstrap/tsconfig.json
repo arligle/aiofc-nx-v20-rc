@@ -7,12 +7,14 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "noPropertyAccessFromIndexSignature": true
+    // "composite": true,
+    // "declaration": true
   },
   "files": [],
   "include": [],
   "references": [
-    { "path": "../config" },
-    { "path": "../auth" },
+    // { "path": "../config" },
+    // { "path": "../auth" },
     { "path": "./tsconfig.lib.json" },
     { "path": "./tsconfig.spec.json" }
   ]

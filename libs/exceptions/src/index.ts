@@ -16,3 +16,13 @@ export * from './lib/interceptors/not-found-exception.filter';
 export * from './lib/swagger';
 export * from './lib/utils/default-response-body-formatter';
 export * from './lib/vo/error-response.dto';
+
+// export * from './lib/exceptions/vo/bad-request.dto';
+// export * from './lib/exceptions/vo/conflict-entity-creation.dto';
+// export * from './lib/exceptions/vo/object-not-found.dto';
+// export * from './lib/exceptions/vo/optimistic-lock.dto';
+
+// export * from './lib/generated/i18n.generated';
+// export * from './lib/swagger/properties/error-code-swagger.property';
+// export * from './lib/utils/constants';
+// export * from './lib/utils/i18n';
