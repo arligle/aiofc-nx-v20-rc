@@ -2,7 +2,7 @@ import { LoggerConfig } from '@aiokit/logger';
 import { AuthConfig } from '@aiokit/auth';
 import { SwaggerConfig } from '@aiokit/swagger-utils';
 import { I18Config } from '@aiokit/i18n';
-import { DbConfig } from '@aiokit/typeorm';
+import { DbConfig } from '@aiokit/orm';
 import { AppConfig } from '@aiokit/bootstrap';
 // import { HttpClientConfig } from '@aiokit/server-http-client';
 // import { PlatformClientConfig } from '@aiokit/platform-client';

@@ -28,18 +28,18 @@ import {
 import { DEFAULT_VALIDATION_OPTIONS } from '@aiokit/validation';
 import { AppConfig } from './config/app.config';
 import { setupSwagger, SwaggerConfig } from '@aiokit/swagger-utils';
-import {
-  // DbConfig,
-  PostgresDbQueryFailedErrorFilter,
-  TYPEORM_FACTORIES_TOKEN,
-  TYPEORM_SEEDERS_TOKEN,
-} from '@aiokit/typeorm';
+
 import { responseBodyFormatter } from '@aiokit/exceptions';
 import { fastifyHelmet } from '@fastify/helmet';
 import { DataSource } from 'typeorm';
 import { callOrUndefinedIfException } from './utils/functions';
 import type { TestingModule } from '@nestjs/testing';
 import { REQUEST_ID_HEADER } from '@aiokit/server-http-client';
+import {
+  DbConfig,
+  PostgresDbQueryFailedErrorFilter,
+  TYPEORM_FACTORIES_TOKEN,
+  TYPEORM_SEEDERS_TOKEN } from '@aiokit/orm';
 
 // const REQUEST_ID_HEADER = 'x-request-id';
 
@@ -222,7 +222,7 @@ export async function bootstrapBaseWebApp(
   setupGlobalInterceptors(app);
 
   const appConfig = app.get(AppConfig);
-  // const dbConfig = callOrUndefinedIfException(() => app.get(DbConfig));
+
   const swaggerConfig = callOrUndefinedIfException(() =>
     app.get(SwaggerConfig),
   );
@@ -251,10 +251,12 @@ export async function bootstrapBaseWebApp(
       swaggerConfig,
     );
   }
-
-  // if (dbConfig instanceof DbConfig) {
-  //   await exports.runDatabaseSeeders(app, logger, dbConfig.runSeeds);
-  // }
+  // TODO:
+  const dbConfig = callOrUndefinedIfException(() => app.get(DbConfig));
+  // TODO:
+  if (dbConfig instanceof DbConfig) {
+    await exports.runDatabaseSeeders(app, logger, dbConfig.runSeeds);
+  }
 
   await app.listen(appConfig.port, '0.0.0.0');
   const url = await app.getUrl();

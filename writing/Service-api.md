@@ -1,7 +1,7 @@
 # Typeorm Service Library
 ## service-api
 
-该库为 @aiokit/typeorm 库提供了一些有用的实用程序，这些实用程序公开了可在您的应用程序中使用的有用的基础服务。
+该库为 @aiokit/orm 库提供了一些有用的实用程序，这些实用程序公开了可在您的应用程序中使用的有用的基础服务。
 
 该库还从 @aiokit/exceptions 库抛出标准异常。所以拦截器可以正确处理一切。
 

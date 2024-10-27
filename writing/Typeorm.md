@@ -1,12 +1,12 @@
 # Typeorm Utilities
 
-This library has some useful utilities for typeorm, entities, repositories, useful subscribers, interceptors.
+这个库有一些有用的实用程序，用于类型、实体、存储库、有用的订阅者、拦截器。
 
-It can be useful outside Softkit ecosystem
+它在 Softkit 生态系统之外也很有用
 
 ## Features
 
-- It provides a base entity that has some useful fields like `createdAt`, `updatedAt`, `deletedAt`, `version`, `id`
+-它提供了一个基本实体，其中包含一些有用的字段，例如“createdAt”、“updatedAt”、“deletedAt”、“version”、“id”
 - It overrides the default typeorm repository, and fixes some type confuses in the default typeorm repository
 - It provides a tenant base repository, that make all requests based on tenant id that must be present in `ClsStore`
 - Useful subscribers for auto populate any field from ClsStore, like `tenantId`, `userId`
@@ -17,7 +17,7 @@ It can be useful outside Softkit ecosystem
 ## Installation
 
 ```bash
-yarn add @aiokit/typeorm
+yarn add @aiokit/orm
 ```
 
 ## Usage
@@ -25,7 +25,7 @@ yarn add @aiokit/typeorm
 ### Add default configuration in your root config class
 
 ```typescript
-import { DbConfig } from '@aiokit/typeorm';
+import { DbConfig } from '@aiokit/orm';
 
 export class RootConfig {
   @Type(() => DbConfig)
@@ -54,7 +54,7 @@ db:
 ### Add setup and entities to your main app module
 
 ```typescript
-import { setupTypeormModule } from '@aiokit/typeorm';
+import { setupTypeormModule } from '@aiokit/orm';
 import * as Entities from './database/entities';
 
 @Module({
@@ -86,7 +86,7 @@ class SampleEntity extends BaseEntityHelper {
 
 ### Repositories to extend from
 
-- `BaseRepository` -扩展默认 typeorm 存储库，并修复默认 typeorm 存储库中的一些类型混淆
+- `BaseRepository` -扩展默认 typeorm repository，并修复默认 typeorm 存储库中的一些类型混淆
 - `TenantBaseRepository` -扩展 `BaseRepository` 并将 `tenantId` 添加到所有请求，该请求取自 `ClsStore`
 
 Note:
