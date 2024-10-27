@@ -23,7 +23,7 @@ export class ClsPresetSubscriber<ClsStoreType extends TenantClsStore>
     this.dataSource.subscribers.push(this);
   }
 
-  beforeInsert(event: InsertEvent<any>): Promise<any> | void {
+  beforeInsert(event: InsertEvent<any>): Promise<any> | undefined {
     /* istanbul ignore next */
     if (event.entity === undefined) {
       return;

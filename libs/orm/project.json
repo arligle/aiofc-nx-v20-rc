@@ -1,7 +1,7 @@
 {
-  "name": "typeorm",
+  "name": "orm",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/typeorm/src",
+  "sourceRoot": "libs/orm/src",
   "projectType": "library",
   "release": {
     "version": {
@@ -17,11 +17,11 @@
       "executor": "@nx/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/libs/typeorm",
-        "tsConfig": "libs/typeorm/tsconfig.lib.json",
-        "packageJson": "libs/typeorm/package.json",
-        "main": "libs/typeorm/src/index.ts",
-        "assets": ["libs/typeorm/*.md"]
+        "outputPath": "dist/libs/orm",
+        "tsConfig": "libs/orm/tsconfig.lib.json",
+        "packageJson": "libs/orm/package.json",
+        "main": "libs/orm/src/index.ts",
+        "assets": ["libs/orm/*.md"]
       }
     },
     "nx-release-publish": {

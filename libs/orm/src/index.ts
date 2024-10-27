@@ -6,7 +6,7 @@ export * from './lib/entity/tenant-entity-helper';
 export * from './lib/interceptors/postgres-db-failed-error.filter';
 export * from './lib/repositories/base-typeorm-entity.repository';
 export * from './lib/repositories/base-typeorm-tracked-entity.repository';
-export * from './lib/repositories/base-tenant.repository';
+export * from './lib/repositories/tenant-base.repository';
 export * from './lib/setup-typeorm-module';
 export * from './lib/subscribers/cls-preset.subscriber';
 export * from './lib/subscribers/decorator/cls-preset.decorator';

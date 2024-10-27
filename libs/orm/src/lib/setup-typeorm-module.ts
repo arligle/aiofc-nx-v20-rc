@@ -6,7 +6,13 @@ import {
   DEFAULT_SETUP_TYPEORM_OPTIONS,
   SetupTypeormOptions,
 } from './vo/setup-typeorm-options';
-
+/**
+ * @description 主要作用是简化 TypeORM 模块的配置和初始化过程，
+ * 确保在应用启动时正确配置和管理数据库连接。
+ * @export
+ * @param [options]
+ * @return {*}
+ */
 export function setupTypeormModule(options?: SetupTypeormOptions) {
   const optionsWithDefault = {
     ...DEFAULT_SETUP_TYPEORM_OPTIONS,
@@ -14,7 +20,7 @@ export function setupTypeormModule(options?: SetupTypeormOptions) {
   };
 
   return TypeOrmModule.forRootAsync({
-    useClass: optionsWithDefault.optionsFactory,
+    useClass: optionsWithDefault.optionsFactory, // TypeOrmConfigService
     dataSourceFactory: async (baseOptions?: DataSourceOptions) => {
       /* istanbul ignore next */
       if (!baseOptions) {

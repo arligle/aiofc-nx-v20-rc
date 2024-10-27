@@ -1,11 +1,10 @@
 export default {
-  displayName: 'typeorm',
+  displayName: 'orm',
   preset: '../../jest.preset.js',
   testEnvironment: 'node',
   transform: {
     '^.+\\.[tj]s$': ['ts-jest', { tsconfig: '<rootDir>/tsconfig.spec.json' }],
   },
-  setupFilesAfterEnv: ['../../jest.setup.js'],
   moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../coverage/libs/typeorm',
+  coverageDirectory: '../../coverage/libs/orm',
 };

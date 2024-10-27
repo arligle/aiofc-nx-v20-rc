@@ -16,13 +16,17 @@ import {
   ValidateNestedProperty,
 } from '@aiokit/validation';
 import { NamingStrategyInterface } from 'typeorm/naming-strategy/NamingStrategyInterface';
-
+/**
+ * @description 用于配置数据库连接的 SSL 选项
+ * @class DbSSLExtraConfig
+ */
 class DbSSLExtraConfig {
   @IsBoolean()
   @BooleanType
   @IsOptional()
-  rejectUnauthorized?: boolean;
+  rejectUnauthorized?: boolean; // 是否拒绝未经授权的连接
 
+  //SSL 证书的相关信息（ca、key、cert）
   @IsString()
   @IsOptional()
   ca?: string;
@@ -35,7 +39,10 @@ class DbSSLExtraConfig {
   @IsOptional()
   cert?: string;
 }
-
+/**
+ * @description 额外的数据库设置
+ * @class DbExtraSettings
+ */
 class DbExtraSettings {
   @IsInt()
   max = 100;
@@ -43,7 +50,11 @@ class DbExtraSettings {
   @ValidateNestedProperty({ required: false, classType: DbSSLExtraConfig })
   ssl?: DbSSLExtraConfig;
 }
-
+/**
+ * @description 数据库连接的配置
+ * @export
+ * @class DbConfig
+ */
 export class DbConfig {
   @IsString()
   type!: string;

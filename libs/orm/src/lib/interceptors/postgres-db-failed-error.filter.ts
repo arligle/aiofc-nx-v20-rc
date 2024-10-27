@@ -25,8 +25,7 @@ export class PostgresDbQueryFailedErrorFilter implements ExceptionFilter {
 
     let response;
 
-    const driverError = exception.driverError as { code?: string; table?: string };
-    switch (driverError?.code) {
+    switch ((exception.driverError as any)?.code) {
       // already exists exception from postgres either by unique constraint or primary key
       case '23505': {
         response = {
@@ -38,7 +37,7 @@ export class PostgresDbQueryFailedErrorFilter implements ExceptionFilter {
             i18n
               ?.translate('exception.CONFLICT.ENTITY_ALREADY_EXISTS', {
                 args: {
-                  entityName: toCapitalizedWords((exception.driverError as { table?: string })?.table),
+                  entityName: toCapitalizedWords((exception.driverError as any)?.table),
                 },
               })
               .toString() || 'Object already exists',
