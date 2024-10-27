@@ -6,9 +6,7 @@
     "noImplicitOverride": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "composite": true,
-    "declaration": true,
+    "noPropertyAccessFromIndexSignature": true
   },
   "files": [],
   "include": [],
