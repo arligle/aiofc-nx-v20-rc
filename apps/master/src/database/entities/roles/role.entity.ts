@@ -7,25 +7,23 @@ import { IsNumberLocalized } from '@aiokit/validation';
 import { Expose } from 'class-transformer';
 
 import {
-<% if (tenantBaseEntity) { %>
+
     BaseTenantEntityHelper as BaseEntity
-<% } else { %>
-    BaseEntityHelper as BaseEntity
-<% } %>
+
 } from '@aiokit/orm';
 
-@Entity('<%= snakeCase(entityName) -%>')
-export class <%= pascalCase(entityName) -%> extends BaseEntity {
-<% if (entityIncludesIdField) { %>
+@Entity('role')
+export class Role extends BaseEntity {
+
   @PrimaryGeneratedColumn('uuid')
   @Expose()
   id!: string;
-<% } %>
 
-<% if (entityIncludesVersionField) { %>
+
+
   @VersionColumn()
   @IsNumberLocalized()
   @Expose()
   version!: number;
-<% } %>
+
 }

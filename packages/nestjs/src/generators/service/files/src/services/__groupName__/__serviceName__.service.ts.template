@@ -3,7 +3,7 @@ import { <%= pascalCase(entityName) -%> } from '../../database/entities';
 import { <%= pascalCase(repositoryName) -%>Repository } from '../../repositories';
 import {
 <% if (tenantBaseService) { %>
-    BaseTenantEntityService as BaseService
+    BaseTrackedEntityService as BaseService
 <% } else { %>
     BaseEntityService as BaseService
 <% } %>

@@ -1,0 +1,272 @@
+[
+  {
+    "categoryName": "Tenants",
+    "categoryDescription": "Tenants management",
+    "permissions": [
+      {
+        "name": "Create Tenant",
+        "description": "Create Tenant",
+        "action": "master.tenant.create",
+        "roles": [
+          "SUPER_ADMIN",
+          "ADMIN"
+        ]
+      },
+      {
+        "name": "Read Tenant",
+        "description": "Read Tenant",
+        "action": "master.tenant.read",
+        "roles": [
+          "SUPER_ADMIN",
+          "ADMIN"
+        ]
+      },
+      {
+        "name": "Update Tenant",
+        "description": "Update Tenant",
+        "action": "master.tenant.update",
+        "roles": [
+          "SUPER_ADMIN",
+          "ADMIN"
+        ]
+      },
+      {
+        "name": "Delete Tenant",
+        "description": "Delete Tenant",
+        "action": "master.tenant.delete",
+        "roles": [
+          "SUPER_ADMIN",
+          "ADMIN"
+        ]
+      },
+      {
+        "name": "Create Tenant",
+        "description": "Create Tenant",
+        "action": "master.tenant.create",
+        "roles": [
+          "SUPER_ADMIN",
+          "ADMIN"
+        ]
+      },
+      {
+        "name": "Read Tenant",
+        "description": "Read Tenant",
+        "action": "master.tenant.read",
+        "roles": [
+          "SUPER_ADMIN",
+          "ADMIN"
+        ]
+      },
+      {
+        "name": "Update Tenant",
+        "description": "Update Tenant",
+        "action": "master.tenant.update",
+        "roles": [
+          "SUPER_ADMIN",
+          "ADMIN"
+        ]
+      },
+      {
+        "name": "Delete Tenant",
+        "description": "Delete Tenant",
+        "action": "master.tenant.delete",
+        "roles": [
+          "SUPER_ADMIN",
+          "ADMIN"
+        ]
+      }
+    ]
+  },
+  {
+    "categoryName": "Users",
+    "categoryDescription": "Users management",
+    "permissions": [
+      {
+        "name": "Create User",
+        "description": "Create User",
+        "action": "master.user.create",
+        "roles": [
+          "SUPER_ADMIN",
+          "ADMIN"
+        ]
+      },
+      {
+        "name": "Read User",
+        "description": "Read User",
+        "action": "master.user.read",
+        "roles": [
+          "SUPER_ADMIN",
+          "ADMIN"
+        ]
+      },
+      {
+        "name": "Update User",
+        "description": "Update User",
+        "action": "master.user.update",
+        "roles": [
+          "SUPER_ADMIN",
+          "ADMIN"
+        ]
+      },
+      {
+        "name": "Delete User",
+        "description": "Delete User",
+        "action": "master.user.delete",
+        "roles": [
+          "SUPER_ADMIN",
+          "ADMIN"
+        ]
+      },
+      {
+        "name": "Create User",
+        "description": "Create User",
+        "action": "master.user.create",
+        "roles": [
+          "SUPER_ADMIN",
+          "ADMIN"
+        ]
+      },
+      {
+        "name": "Read User",
+        "description": "Read User",
+        "action": "master.user.read",
+        "roles": [
+          "SUPER_ADMIN",
+          "ADMIN"
+        ]
+      },
+      {
+        "name": "Update User",
+        "description": "Update User",
+        "action": "master.user.update",
+        "roles": [
+          "SUPER_ADMIN",
+          "ADMIN"
+        ]
+      },
+      {
+        "name": "Delete User",
+        "description": "Delete User",
+        "action": "master.user.delete",
+        "roles": [
+          "SUPER_ADMIN",
+          "ADMIN"
+        ]
+      }
+    ]
+  },
+  {
+    "categoryName": "Roles",
+    "categoryDescription": "Roles management",
+    "permissions": [
+      {
+        "name": "Create Role",
+        "description": "Create Role",
+        "action": "master.role.create",
+        "roles": [
+          "SUPER_ADMIN",
+          "ADMIN"
+        ]
+      },
+      {
+        "name": "Read Role",
+        "description": "Read Role",
+        "action": "master.role.read",
+        "roles": [
+          "SUPER_ADMIN",
+          "ADMIN"
+        ]
+      },
+      {
+        "name": "Update Role",
+        "description": "Update Role",
+        "action": "master.role.update",
+        "roles": [
+          "SUPER_ADMIN",
+          "ADMIN"
+        ]
+      },
+      {
+        "name": "Delete Role",
+        "description": "Delete Role",
+        "action": "master.role.delete",
+        "roles": [
+          "SUPER_ADMIN",
+          "ADMIN"
+        ]
+      },
+      {
+        "name": "Create Role",
+        "description": "Create Role",
+        "action": "master.role.create",
+        "roles": [
+          "SUPER_ADMIN",
+          "ADMIN"
+        ]
+      },
+      {
+        "name": "Read Role",
+        "description": "Read Role",
+        "action": "master.role.read",
+        "roles": [
+          "SUPER_ADMIN",
+          "ADMIN"
+        ]
+      },
+      {
+        "name": "Update Role",
+        "description": "Update Role",
+        "action": "master.role.update",
+        "roles": [
+          "SUPER_ADMIN",
+          "ADMIN"
+        ]
+      },
+      {
+        "name": "Delete Role",
+        "description": "Delete Role",
+        "action": "master.role.delete",
+        "roles": [
+          "SUPER_ADMIN",
+          "ADMIN"
+        ]
+      },
+      {
+        "name": "Create Role",
+        "description": "Create Role",
+        "action": "master.role.create",
+        "roles": [
+          "SUPER_ADMIN",
+          "ADMIN"
+        ]
+      },
+      {
+        "name": "Read Role",
+        "description": "Read Role",
+        "action": "master.role.read",
+        "roles": [
+          "SUPER_ADMIN",
+          "ADMIN"
+        ]
+      },
+      {
+        "name": "Update Role",
+        "description": "Update Role",
+        "action": "master.role.update",
+        "roles": [
+          "SUPER_ADMIN",
+          "ADMIN"
+        ]
+      },
+      {
+        "name": "Delete Role",
+        "description": "Delete Role",
+        "action": "master.role.delete",
+        "roles": [
+          "SUPER_ADMIN",
+          "ADMIN"
+        ]
+      }
+    ]
+  }
+]

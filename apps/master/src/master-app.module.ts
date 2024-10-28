@@ -8,7 +8,7 @@ import * as Repositories from './repositories';
 import * as Services from './services';
 
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { setupTypeormModule } from '@aiokit/typeorm';
+import { setupTypeormModule } from '@aiokit/orm';
 
 import MasterRootConfig from './config/master-root.config';
 

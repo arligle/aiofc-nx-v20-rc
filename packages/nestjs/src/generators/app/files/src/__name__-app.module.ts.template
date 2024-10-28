@@ -8,7 +8,7 @@ import * as Repositories from './repositories';
 import * as Services from './services';
 <% if (db) { %>
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { setupTypeormModule } from '@aiokit/typeorm';
+import { setupTypeormModule } from '@aiokit/orm';
 <% } %>
 import <%= pascalCase(name) -%>RootConfig from './config/<%= name -%>-root.config';
 <% if (auth) { %>

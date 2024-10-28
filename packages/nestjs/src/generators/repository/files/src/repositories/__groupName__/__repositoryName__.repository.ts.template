@@ -4,15 +4,15 @@ import { DataSource } from 'typeorm';
 import { <%= pascalCase(entityName) -%> } from '../../database/entities';
 import {
 <% if (tenantBaseRepository) { %>
-    BaseTenantRepository as BaseRepository,
-    TenantClsStore
+    BaseTypeormTenantedEntityRepository as BaseRepository
 <% } else { %>
     BaseRepository as BaseRepository
 <% } %>
-} from '@aiokit/typeorm';
+} from '@aiokit/orm';
 
 <% if (tenantBaseRepository) { %>
 import { ClsService } from 'nestjs-cls';
+import { TenantClsStore } from '@aiokit/persistence-api';
 <% } %>
 
 <% if (tenantBaseRepository) { %>
